@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html> 
 <html lang="en">
 <head>
@@ -410,8 +411,8 @@ mapboxgl.accessToken="pk.eyJ1IjoicmVtbWlhZ2JlYmkiLCJhIjoiY21odHRrYTQzMTk0bjJqcjE
 
 const GPX_URL="https://raw.githubusercontent.com/remmiagbebi-beep/crashed-plane-flyover/refs/heads/main/The%20Crashed%20Plane%20Hike%20-%20GPX.gpx";
 
-/* Issue 2: camera behind the walker looking forwards */
-const BEARING_OFFSET_DEG = 180;
+/* Fix: behind the walker looking forwards = forward bearing (no 180) */
+const BEARING_OFFSET_DEG = 0;
 
 const START_ZOOM=15.7,
       CENTER_SMOOTH=0.06,
@@ -879,3 +880,4 @@ function tick(ts){
 
 </body>
 </html>
+```
